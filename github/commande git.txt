@@ -1,0 +1,166 @@
+Microsoft Windows [version 10.0.19045.3448]
+(c) Microsoft Corporation. Tous droits réservés.
+
+C:\Users\asus>cd OneDrive
+
+C:\Users\asus\OneDrive>cd Documents
+
+C:\Users\asus\OneDrive\Documents>cd coursGit
+
+C:\Users\asus\OneDrive\Documents\coursGit>git init
+Initialized empty Git repository in C:/Users/asus/OneDrive/Documents/coursGit/.git/
+
+C:\Users\asus\OneDrive\Documents\coursGit>git add .
+warning: LF will be replaced by CRLF in index.txt.
+The file will have its original line endings in your working directory
+
+C:\Users\asus\OneDrive\Documents\coursGit>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.txt
+        new file:   inutile.txt
+
+
+C:\Users\asus\OneDrive\Documents\coursGit>git reset inutile.txt
+
+C:\Users\asus\OneDrive\Documents\coursGit>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        inutile.txt
+
+
+C:\Users\asus\OneDrive\Documents\coursGit>git commit -m "test 1"
+[master (root-commit) e99fea0] test 1
+ 1 file changed, 37 insertions(+)
+ create mode 100644 index.txt
+
+C:\Users\asus\OneDrive\Documents\coursGit>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        inutile.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\asus\OneDrive\Documents\coursGit>git tag v1
+
+C:\Users\asus\OneDrive\Documents\coursGit>cd ..
+
+C:\Users\asus\OneDrive\Documents>md premiier depot
+
+C:\Users\asus\OneDrive\Documents>cd premiier depot
+Le chemin d’accès spécifié est introuvable.
+
+C:\Users\asus\OneDrive\Documents>cd premiier
+
+C:\Users\asus\OneDrive\Documents\premiier>cd ..
+
+C:\Users\asus\OneDrive\Documents>md premier_depot
+
+C:\Users\asus\OneDrive\Documents>cd premier_depot
+
+C:\Users\asus\OneDrive\Documents\premier_depot>git init
+Initialized empty Git repository in C:/Users/asus/OneDrive/Documents/premier_depot/.git/
+
+C:\Users\asus\OneDrive\Documents\premier_depot>git add .
+warning: LF will be replaced by CRLF in contactez nous.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in index.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in produits.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in site.txt.
+The file will have its original line endings in your working directory
+
+C:\Users\asus\OneDrive\Documents\premier_depot>git commit -m "commit initial"
+[master (root-commit) 7aa90eb] commit initial
+ 5 files changed, 208 insertions(+)
+ create mode 100644 "banni\303\250re.png"
+ create mode 100644 contactez nous.txt
+ create mode 100644 index.txt
+ create mode 100644 produits.txt
+ create mode 100644 site.txt
+
+C:\Users\asus\OneDrive\Documents\premier_depot>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\asus\OneDrive\Documents\premier_depot>git tag v1
+
+C:\Users\asus\OneDrive\Documents\premier_depot>git log
+commit 7aa90ebf4edd12b6292b0371d91ff74e022aeaf0 (HEAD -> master, tag: v1)
+Author: Amir El Gharbi <amiregbpro@hotmail.com>
+Date:   Wed Oct 4 13:51:54 2023 +0200
+
+    commit initial
+
+C:\Users\asus\OneDrive\Documents\premier_depot>dir
+ Le volume dans le lecteur C n’a pas de nom.
+ Le numéro de série du volume est 9EDF-DD58
+
+ Répertoire de C:\Users\asus\OneDrive\Documents\premier_depot
+
+04/10/2023  13:48    <DIR>          .
+04/10/2023  13:48    <DIR>          ..
+04/10/2023  13:48         1 890 884 bannière.png
+04/10/2023  13:48             1 896 contactez nous.txt
+04/10/2023  13:42             1 515 index.txt
+04/10/2023  13:47             3 305 produits.txt
+04/10/2023  13:48             1 324 site.txt
+               5 fichier(s)        1 898 924 octets
+               2 Rép(s)  310 646 718 464 octets libres
+
+C:\Users\asus\OneDrive\Documents\premier_depot>ren index.txt index.html
+
+C:\Users\asus\OneDrive\Documents\premier_depot>ren site.txt site.css
+
+C:\Users\asus\OneDrive\Documents\premier_depot>ren "contactez nous.txt" contact.html
+
+C:\Users\asus\OneDrive\Documents\premier_depot>ren produits.txt produits.html
+
+C:\Users\asus\OneDrive\Documents\premier_depot>git add .
+warning: LF will be replaced by CRLF in contact.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in produits.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in site.css.
+The file will have its original line endings in your working directory
+
+C:\Users\asus\OneDrive\Documents\premier_depot>git commit -m "renommage des fichiers"
+[master a4e5178] renommage des fichiers
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ rename contactez nous.txt => contact.html (100%)
+ rename index.txt => index.html (100%)
+ rename produits.txt => produits.html (100%)
+ rename site.txt => site.css (100%)
+
+C:\Users\asus\OneDrive\Documents\premier_depot>git tag v2
+
+C:\Users\asus\OneDrive\Documents\premier_depot>git log
+commit a4e5178cb7d967dc54d86e6be870a6cf1c9e20f8 (HEAD -> master, tag: v2)
+Author: Amir El Gharbi <amiregbpro@hotmail.com>
+Date:   Wed Oct 4 14:47:19 2023 +0200
+
+    renommage des fichiers
+
+commit 7aa90ebf4edd12b6292b0371d91ff74e022aeaf0 (tag: v1)
+Author: Amir El Gharbi <amiregbpro@hotmail.com>
+Date:   Wed Oct 4 13:51:54 2023 +0200
+
+    commit initial
+
+C:\Users\asus\OneDrive\Documents\premier_depot>

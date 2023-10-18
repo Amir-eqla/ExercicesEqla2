@@ -1,0 +1,45 @@
+Microsoft Windows [version 10.0.19045.3570]
+(c) Microsoft Corporation. Tous droits réservés.
+
+C:\Users\asus>cd OneDrive
+
+C:\Users\asus\OneDrive>cd Documents
+
+C:\Users\asus\OneDrive\Documents>gh repo create gitignoreTests --public --clone
+✓ Created repository Amir-eqla/gitignoreTests on GitHub
+Initialized empty Git repository in C:/Users/asus/OneDrive/Documents/gitignoreTests/.git/
+
+C:\Users\asus\OneDrive\Documents>cd gitignoreTests
+
+C:\Users\asus\OneDrive\Documents\gitignoreTests>notepad .gitignore
+
+C:\Users\asus\OneDrive\Documents\gitignoreTests>git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+C:\Users\asus\OneDrive\Documents\gitignoreTests>echo > password.txt
+
+C:\Users\asus\OneDrive\Documents\gitignoreTests>git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+C:\Users\asus\OneDrive\Documents\gitignoreTests>dir
+ Le volume dans le lecteur C n’a pas de nom.
+ Le numéro de série du volume est 9EDF-DD58
+
+ Répertoire de C:\Users\asus\OneDrive\Documents\gitignoreTests
+
+18/10/2023  14:09    <DIR>          .
+18/10/2023  14:09    <DIR>          ..
+18/10/2023  14:08                26 .gitignore
+18/10/2023  14:09                24 password.txt
+               2 fichier(s)               50 octets
+               2 Rép(s)  310 931 865 600 octets libres
+
+C:\Users\asus\OneDrive\Documents\gitignoreTests>
