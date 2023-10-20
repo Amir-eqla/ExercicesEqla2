@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice10.6</title>
+</head>
+<body>
+    <h1>Simple formulaire</h1>
+    <form action="http://zamboyle.synology.me:2727/forms/demos/showvars.php" method="get">
+        <label for="nom">Nom</label><input type="text" name="nom" id="nom" required>
+        <br>
+        <label for="prenom">Prenom</label><input type="text" name="prenom" id="prenom" required>
+        <br>
+        <label for="email">Email</label><input type="email" name="email" id="email" required>
+        <br>
+        <label for="age">Âge :</label>
+        <input type="number" id="age" name="age">
+        <br>
+        <label for="commentaires">Commentaires :</label>
+        <textarea id="commentaires" name="commentaires"></textarea>
+        <br>
+        <label>
+            <input type="checkbox" name="newsletter"> Je souhaite recevoir des informations par email?
+        </label>
+        <br>
+        <p>Quel sont vos prérequis</p>
+        <input type="checkbox" name="prérequis[]" value="php"> Php<br>
+        <input type="checkbox" name="prérequis[]" value="html"> Html<br>
+        <input type="checkbox" name="prérequis[]" value="css"> Css<br>  
+        <p>Quel est votre sexe ?</p>  
+        <input type="radio" name="sexe" value="femme">Femme<br>
+        <input type="radio" name="sexe" value="homme">Homme<br>
+        <input type="radio" name="sexe" value="non binaire">Non binaire<br>
+        <input type="submit">
+    </form>
+
+</body>
+</html>
