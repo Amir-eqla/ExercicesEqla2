@@ -1,0 +1,54 @@
+/* Style pour la barre de navigation */
+.navbar {
+  background-color: black;
+}
+
+.navbar-toggler {
+  color: white;
+  border-color: white;
+}
+
+.navbar-toggler:hover {
+  color: white;
+  background-color: darkblue;
+  border-color: white;
+}
+
+.navbar-toggler span {
+  display: none;
+}
+
+.navbar-toggler::after {
+  content: "Menu";
+  display: inline-block;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar-collapse {
+  background-color: black;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-item {
+  margin-bottom: 10px;
+}
+
+.nav-link {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+a:hover {
+  background-color: yellow;
+  color: black;
+}
